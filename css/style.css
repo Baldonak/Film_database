@@ -1,0 +1,295 @@
+
+body {
+
+margin: 0px;
+padding: 0px;
+background-image: url("../img/Fondo_fantasia.jpg");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+font-family: sans-serif;
+text-align: center;
+align-content: center;
+
+}
+
+header{
+
+    width: 100%;
+    height: 50px;
+    padding: 0;
+    margin: 0;
+    background-color: #b3bd27;
+    
+}
+    #header_secondary {
+
+        margin-top: -20px;
+    }
+
+    #main{
+
+        margin: 0;
+        width: 100%;
+        height: 650px;
+        background-color: aquamarine;
+    }
+
+        #main .slider {
+            
+            margin: 0;
+            width: 100%px;
+            height: 550px;
+            background-color: rgb(131, 255, 127);
+            overflow: cover;
+
+        }
+
+            #main .slider .slides {
+
+                background-color: antiquewhite;
+                
+            }
+    
+                #main .slider .slides li {
+                    
+                    height: 550px;
+                    
+                    
+                }   
+                #main .slider .slides img{
+
+                    object-fit: contain; /*contain*/
+                    width: 100%;
+                    height: 500px;
+
+                    
+                }
+
+
+    .header_ul 
+        {
+            border: 1px solid grey;
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            justify-content: center;
+            width: 100%;
+            background-color: rgb(143, 215, 233);
+            position: fixed;
+            overflow: hidden;
+            z-index: 10;
+         }
+
+         .header_ul .header_li 
+            {
+                display: flex;
+                text-align: center;
+                height: 50px;
+                justify-content: center;
+                float: left;
+            }
+            .header_ul li a
+            {
+                color: black;
+                border: 1px solid grey;
+                padding: 14px 16px;
+                text-decoration: none;
+                font-size: 16px;
+            }
+
+        .header_ul li  a:hover:not(.header_a_active) {background-color: #111;}
+
+        .header_active {background-color: #4CAF50;}
+
+        .header_ul .header_li_right  {float: right;}
+
+
+
+        .header_ul li  .header_a_active {background-color: #4CAF50;}
+
+
+
+        @media screen and (max-width: 600px) {
+            .header_ul li  .header_a_right, 
+            .header_ul li {float: none;}
+        }
+
+.main_container 
+{
+    margin-top: 800px;
+}
+
+h1{
+
+    text-decoration: none; /*decoración texto*/
+    text-transform: uppercase; /*capitalización texto*/
+    font-family: 'Helvetica', sans-serif; /*tipografía texto*/
+    font-size: 30px;
+}
+
+    section .container{
+        background-color:rgb(223, 213, 206);
+        margin-top: 50px;
+        padding: 0px;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        /*text-align: center;*/
+
+    }
+
+        article .film_container{
+
+            margin: 10px;
+            padding: 10px;
+
+            background-color: rgb(143, 215, 233);
+            border: 1px solid #369;
+            border-right: 3px solid #369;
+            border-bottom: 3px solid #369;
+            float:left;
+            width: 250px;
+            height: 400px;
+
+        }
+            .button{
+
+                margin:5px;
+                border: 1px solid #0a0a0a; /*anchura, estilo y color borde*/
+                padding: 10px; /*espacio alrededor texto*/
+                background-color: #2e518b; /*color botón*/
+                color: #ffffff; /*color texto*/
+                text-decoration: none; /*decoración texto*/
+                /*text-transform: uppercase; /*capitalización texto*/
+                font-family: 'Helvetica', sans-serif; /*tipografía texto*/
+            }
+
+            .button:hover{
+
+                background-color: #bd3927; /*color botón*/
+            }
+
+            #Icon_delete{
+                position: relative;
+                top: -40px;
+                left: 100px;
+            }
+
+
+/* FORMULARIOS: Updated_database_entry; Add_database_entry */
+
+form p {
+
+    font-weight: bolder;
+    text-align: left;
+
+}
+
+    .Form_ingreso_base_datos input {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+
+    #Form_busqueda {
+
+        background-color: #4CAF50;
+        padding: 0;
+        display: flex;
+        width: 300px;
+        height: 50px;
+        top: 5px;
+    }
+
+         #Input_busqueda {
+
+            display: right;
+            width: 300px;
+
+        }
+
+        #Button_busqueda {
+
+            display: right;
+            margin: 0px;
+        }
+            #Icon_search {
+
+                height: 20px;
+                width: 20px;
+            }
+
+/* Eliminar_database */
+
+    #Article_eliminar {
+
+        /*background-color: #bd3927;*/
+        display: flex;
+        justify-content: center;
+        /*align-items: center;*/
+        width: 100%;
+        
+    }
+
+        #Article_eliminar form{
+
+            /*background-color: #b3bd27;*/
+            display:flex;
+            justify-content: center;
+            width: 200px;
+        }
+
+            #Article_eliminar button {
+
+                width: 50px;
+                height: 50px;
+            }
+
+footer {
+
+    background-color: #369;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+}
+
+    footer p {
+
+        color: white;
+    }
+
+/*Media Queries*/
+/* Large desktops and laptops */
+@media (min-width: 1200px) {
+
+}
+
+/* Landscape tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+
+}
+
+/* Portrait phones and smaller */
+@media (max-width: 480px) {
+
+}
