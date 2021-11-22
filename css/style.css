@@ -3,12 +3,7 @@ body {
 
 margin: 0px;
 padding: 0px;
-background-image: url("../img/Fondo_fantasia.jpg");
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-
+background-color: aquamarine;
 font-family: sans-serif;
 text-align: center;
 align-content: center;
